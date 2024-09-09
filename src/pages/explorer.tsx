@@ -1,10 +1,8 @@
 import Head from 'next/head';
-import SwapBox from '../components/swapBox/swapBox';
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-// pages/index.js
-const Home = () => {
+const Explorer = () => {
   const { t } = useTranslation();
  
   return (
@@ -15,11 +13,9 @@ const Home = () => {
           content="Web3Exchange.eth | Secure, Decentralized Crypto Trading Platform"
           name="description"
         />
-        <link href="/favicon.ico" rel="icon" />
       </Head>
       <main className="container m-auto text-center h-screen w-screen">
-        <h1 className='text-6xl text-black lg:mt-[60px] dark:text-white '>{t('home-page.title-one')}<br className=''></br>{t('home-page.title-two')}</h1>
-        <SwapBox />
+        <h1 className='text-6xl text-black lg:mt-[60px] dark:text-white '>explorer</h1>
       </main>
         
     </div>
@@ -38,5 +34,5 @@ export async function getStaticProps(context :any) {
   }
 }
 
-export default Home;
+export default Explorer;
  
