@@ -41,7 +41,7 @@ export default function SwapBox() {
         ))}
       </ul>
       {active === 0 && (
-        <div className="buy m-auto mt-4">
+        <div className="buy grid grid-cols-1 m-auto mt-4">
           <label className="text-left justify-items-start" htmlFor="sell">
             Sell
           </label>
